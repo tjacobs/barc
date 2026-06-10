@@ -4,9 +4,9 @@
 
 | Role | Who |
 |------|-----|
-| **Founder** | Thomas (you) |
+| **Founder** | Tom |
 | **Builder** | Vetted members — proven builders, manually invited |
-| **Guest** | Temporary access for prospective members |
+| **Guest**   | Temporary access for prospective members |
 
 All members start as Guest until a Builder vouches for them or they share work.
 
@@ -19,19 +19,19 @@ All members start as Guest until a Builder vouches for them or they share work.
 - `#introductions` — post your background, what you build, what you're working on
 
 ### GENERAL
-- `#announcements` — events, news, admin (Founder/Builder post only)
+- `#announcements` — events, news, admin
 - `#general-chat` — open discussion
 - `#off-topic` — anything non-robotics
 
 ### BUILDS
-- `#show-and-tell` — post your builds, WIPs, videos, photos
+- `#show-and-tell` — post your builds, work in progress, videos, photos
 - `#build-help` — ask technical questions, get unblocked
 - `#build-logs` — ongoing project threads, one per project
 
 ### RESEARCH & TECH
 - `#papers` — share and discuss research papers
-- `#new-hardware` — interesting new components, sensors, actuators, compute
-- `#software-tools` — ROS, simulation, firmware, perception stacks, ML
+- `#hardware` — interesting new components, sensors, actuators, compute
+- `#software` — simulators, python, perception, machine learning
 - `#cool-finds` — videos, tweets, blogs worth sharing
 
 ### EVENTS
@@ -45,7 +45,6 @@ All members start as Guest until a Builder vouches for them or they share work.
 
 ### VOICE
 - `General Hangout`
-- `Build Session` — background VC while working
 - `Event Night` — used during meetups for remote attendees
 
 ---
@@ -53,6 +52,6 @@ All members start as Guest until a Builder vouches for them or they share work.
 ## Setup Notes
 
 - Slow mode on `#general-chat`: 30 seconds (keeps quality high)
-- `#show-and-tell` requires an image or video — pin this rule
+- The `#show-and-tell` channel requires an image or video, pin this rule
 - Guest role can read but not post in BUILDS or RESEARCH channels
-- Use threads aggressively in `#build-logs` and `#papers`
+- Use threads in `#build-logs` and `#papers`
