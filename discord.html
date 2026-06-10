@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discord Structure — BARC</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0d0d0d;
+      --surface: #141414;
+      --border: #222;
+      --accent: #e8ff47;
+      --text: #e8e8e8;
+      --muted: #666;
+      --font: 'SF Mono', 'Fira Code', 'Courier New', monospace;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 14px;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 2rem 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .logo span { color: var(--muted); font-weight: 400; }
+
+    .back {
+      color: var(--muted);
+      font-size: 0.75rem;
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .back:hover { color: var(--accent); }
+
+    main {
+      flex: 1;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 4rem 3rem;
+      width: 100%;
+    }
+
+    .tag {
+      display: inline-block;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      padding: 0.2rem 0.6rem;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #fff;
+      letter-spacing: -0.02em;
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 3rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2:first-of-type { margin-top: 0; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid var(--border);
+      margin-bottom: 1rem;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.85rem;
+    }
+
+    th {
+      background: var(--surface);
+      color: var(--muted);
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    td strong { color: var(--accent); }
+
+    .note { color: var(--muted); font-size: 0.85rem; margin-bottom: 1rem; }
+
+    .category {
+      border: 1px solid var(--border);
+      background: var(--surface);
+      margin-bottom: 1rem;
+    }
+
+    .category-name {
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 0.75rem 1.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .channel {
+      display: flex;
+      gap: 1rem;
+      padding: 0.6rem 1.25rem;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.85rem;
+    }
+    .channel:last-child { border-bottom: none; }
+
+    .channel-name {
+      color: var(--accent);
+      white-space: nowrap;
+      min-width: 9.5rem;
+    }
+
+    .channel-desc { color: var(--text); }
+
+    ul { list-style: none; }
+
+    ul li {
+      padding: 0.4rem 0 0.4rem 1.25rem;
+      position: relative;
+      font-size: 0.85rem;
+    }
+
+    ul li::before {
+      content: "▸";
+      color: var(--accent);
+      position: absolute;
+      left: 0;
+    }
+
+    code {
+      color: var(--accent);
+      background: var(--surface);
+      padding: 0.1rem 0.35rem;
+      border: 1px solid var(--border);
+      font-size: 0.85em;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 3rem;
+      color: var(--muted);
+      font-size: 0.75rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a class="logo" href="index.html">BARC <span>// Bay Area Robot Club</span></a>
+    <a class="back" href="index.html">← Back</a>
+  </header>
+
+  <main>
+    <div class="tag">Draft for review</div>
+    <h1>Discord Server Structure</h1>
+
+    <h2>Roles</h2>
+    <table>
+      <tr><th>Role</th><th>Who</th></tr>
+      <tr><td><strong>Founder</strong></td><td>Tom</td></tr>
+      <tr><td><strong>Builder</strong></td><td>Vetted members — proven builders, manually invited</td></tr>
+      <tr><td><strong>Guest</strong></td><td>Temporary access for prospective members</td></tr>
+    </table>
+    <p class="note">All members start as Guest until a Builder vouches for them or they share work.</p>
+
+    <h2>Categories &amp; Channels</h2>
+
+    <div class="category">
+      <div class="category-name">Welcome</div>
+      <div class="channel"><span class="channel-name">#start-here</span><span class="channel-desc">pinned rules, what BARC is, how to get Builder role</span></div>
+      <div class="channel"><span class="channel-name">#introductions</span><span class="channel-desc">post your background, what you build, what you're working on</span></div>
+    </div>
+
+    <div class="category">
+      <div class="category-name">General</div>
+      <div class="channel"><span class="channel-name">#announcements</span><span class="channel-desc">events, news, admin</span></div>
+      <div class="channel"><span class="channel-name">#general-chat</span><span class="channel-desc">open discussion</span></div>
+      <div class="channel"><span class="channel-name">#off-topic</span><span class="channel-desc">anything non-robotics</span></div>
+    </div>
+
+    <div class="category">
+      <div class="category-name">Builds</div>
+      <div class="channel"><span class="channel-name">#show-and-tell</span><span class="channel-desc">post your builds, work in progress, videos, photos</span></div>
+      <div class="channel"><span class="channel-name">#build-help</span><span class="channel-desc">ask technical questions, get unblocked</span></div>
+      <div class="channel"><span class="channel-name">#build-logs</span><span class="channel-desc">ongoing project threads, one per project</span></div>
+    </div>
+
+    <div class="category">
+      <div class="category-name">Research &amp; Tech</div>
+      <div class="channel"><span class="channel-name">#papers</span><span class="channel-desc">share and discuss research papers</span></div>
+      <div class="channel"><span class="channel-name">#hardware</span><span class="channel-desc">interesting new components, sensors, actuators, compute</span></div>
+      <div class="channel"><span class="channel-name">#software</span><span class="channel-desc">simulators, python, perception, machine learning</span></div>
+      <div class="channel"><span class="channel-name">#cool-finds</span><span class="channel-desc">videos, tweets, blogs worth sharing</span></div>
+    </div>
+
+    <div class="category">
+      <div class="category-name">Events</div>
+      <div class="channel"><span class="channel-name">#meetups</span><span class="channel-desc">logistics for Palo Alto in-person events</span></div>
+      <div class="channel"><span class="channel-name">#event-ideas</span><span class="channel-desc">propose topics, demos, formats</span></div>
+      <div class="channel"><span class="channel-name">#past-events</span><span class="channel-desc">photos and notes from previous meetups</span></div>
+    </div>
+
+    <div class="category">
+      <div class="category-name">Collaboration</div>
+      <div class="channel"><span class="channel-name">#project-board</span><span class="channel-desc">post if you're looking for collaborators or have a project to staff</span></div>
+      <div class="channel"><span class="channel-name">#research-collab</span><span class="channel-desc">coordinating shared research or joint builds</span></div>
+    </div>
+
+    <div class="category">
+      <div class="category-name">Voice</div>
+      <div class="channel"><span class="channel-name">General Hangout</span><span class="channel-desc"></span></div>
+      <div class="channel"><span class="channel-name">Event Night</span><span class="channel-desc">used during meetups for remote attendees</span></div>
+    </div>
+
+    <h2>Setup Notes</h2>
+    <ul>
+      <li>Slow mode on <code>#general-chat</code>: 30 seconds (keeps quality high)</li>
+      <li>The <code>#show-and-tell</code> channel requires an image or video, pin this rule</li>
+      <li>Guest role can read but not post in BUILDS or RESEARCH channels</li>
+      <li>Use threads in <code>#build-logs</code> and <code>#papers</code></li>
+    </ul>
+  </main>
+
+  <footer>
+    <span>BARC — Bay Area Robot Club</span>
+    <span>Palo Alto, CA · Est. 2026</span>
+  </footer>
+
+</body>
+</html>
