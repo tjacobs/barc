@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BARC — Bay Area Robot Club</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0d0d0d;
+      --surface: #141414;
+      --border: #222;
+      --accent: #e8ff47;
+      --text: #e8e8e8;
+      --muted: #666;
+      --font: 'SF Mono', 'Fira Code', 'Courier New', monospace;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 14px;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 2rem 3rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+    }
+
+    .logo span {
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    main {
+      flex: 1;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 5rem 3rem;
+      width: 100%;
+    }
+
+    .tag {
+      display: inline-block;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      padding: 0.2rem 0.6rem;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.5rem;
+      color: #fff;
+    }
+
+    h1 em {
+      color: var(--accent);
+      font-style: normal;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: var(--muted);
+      max-width: 520px;
+      margin-bottom: 4rem;
+      line-height: 1.7;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      margin-bottom: 4rem;
+    }
+
+    .cell {
+      background: var(--surface);
+      padding: 1.5rem;
+    }
+
+    .cell-label {
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .cell-value {
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    .cta-block {
+      border: 1px solid var(--border);
+      background: var(--surface);
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .cta-text {
+      font-size: 0.9rem;
+      color: var(--muted);
+      max-width: 400px;
+    }
+
+    .cta-text strong {
+      display: block;
+      color: var(--text);
+      font-size: 1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .cta-link {
+      display: inline-block;
+      background: var(--accent);
+      color: #000;
+      font-family: var(--font);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      white-space: nowrap;
+      transition: opacity 0.15s;
+    }
+
+    .cta-link:hover { opacity: 0.85; }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 3rem;
+      color: var(--muted);
+      font-size: 0.75rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">BARC <span>// Bay Area Robot Club</span></div>
+  </header>
+
+  <main>
+    <div class="tag">Palo Alto</div>
+
+    <h1>Calling all <em>builders.</em></h1>
+
+    <p class="subtitle">
+      A small, invite-only club for people who actually build robots.
+      In-person meetups, hardware demos, Discord chat, and research collaboration.
+    </p>
+
+    <div class="grid">
+      <div class="cell">
+        <div class="cell-label">Format</div>
+        <div class="cell-value">In-person meetups + Discord</div>
+      </div>
+      <div class="cell">
+        <div class="cell-label">Where</div>
+        <div class="cell-value">Palo Alto, CA</div>
+      </div>
+      <div class="cell">
+        <div class="cell-label">Membership</div>
+        <div class="cell-value">Invite only — bring your work</div>
+      </div>
+      <div class="cell">
+        <div class="cell-label">What</div>
+        <div class="cell-value">Robots · Actuators · Hardware · Software</div>
+      </div>
+      <div class="cell">
+        <div class="cell-label">When</div>
+        <div class="cell-value">Last Saturday of every month</div>
+      </div>
+      <div class="cell">
+        <div class="cell-label">Who</div>
+        <div class="cell-value">Builders, researchers, developers</div>
+      </div>
+    </div>
+
+    <div class="cta-block">
+      <div class="cta-text">
+        <strong>Want in?</strong>
+        Members are invited directly. If someone sent you here,
+        reach out and show us what you're building.
+      </div>
+      <a class="cta-link" href="mailto:hatsmagee@gmail.com">Get in touch</a>
+    </div>
+  </main>
+
+  <footer>
+    <span>BARC — Bay Area Robot Club</span>
+    <span>Palo Alto, CA · Est. 2026</span>
+  </footer>
+
+</body>
+</html>
