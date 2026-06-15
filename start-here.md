@@ -10,7 +10,7 @@ Robots, actuators, hardware, software. Show what you've built, get unblocked, fi
 
 ## Meetups
 
-**Last Sunday of every month** in Palo Alto. First one: **June 28th, 2026.** Details in #meetups.
+**Last Sunday of every month** in Palo Alto. First one: **June 28th, 2026.**
 
 ## Roles
 
