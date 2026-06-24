@@ -12,7 +12,7 @@ Robots, actuators, hardware, software. Show what you've built, find collaborator
 
 ## Meetups
 
-Last Sunday of every month in Palo Alto. First one: **June 28th, 2026.**
+Last Sunday of every month in Palo Alto. First one: **July 26th, 2026.**
 
 ## Access
 
