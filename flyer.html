@@ -100,9 +100,24 @@
       color: var(--muted);
     }
 
+    .photos {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .photos img {
+      width: 100%;
+      height: 90px;
+      object-fit: cover;
+      border: 1px solid var(--line);
+      display: block;
+    }
+
     @media print {
       body { padding: 0; }
       .flyer { border: 2px solid var(--ink); }
+      .photos img { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
     }
   </style>
 </head>
@@ -133,6 +148,12 @@
         <div class="label">Focus</div>
         <div class="value">Robots &middot; Actuators &middot; Hardware &middot; Software</div>
       </div>
+    </div>
+
+    <div class="photos">
+      <img src="img/lineup.jpg" alt="Home-built robots">
+      <img src="img/builders.jpg" alt="BARC builders with robots">
+      <img src="img/group.jpg" alt="BARC members with robots">
     </div>
 
     <div class="qr-wrap">
