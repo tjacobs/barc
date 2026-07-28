@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BARC — Printable Flyer</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #111;
+      --muted: #555;
+      --line: #ccc;
+      --font: 'SF Mono', 'Fira Code', 'Courier New', monospace;
+    }
+
+    html, body { background: #fff; color: var(--ink); }
+
+    body {
+      font-family: var(--font);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+    }
+
+    .flyer {
+      width: 100%;
+      max-width: 640px;
+      border: 2px solid var(--ink);
+      padding: 3rem;
+      text-align: center;
+    }
+
+    .brand {
+      font-size: 1rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 2rem;
+    }
+    .brand strong { color: var(--ink); font-weight: 700; }
+
+    h1 {
+      font-size: 2.6rem;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.25rem;
+    }
+
+    .sub {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--muted);
+      max-width: 30rem;
+      margin: 0 auto 2.5rem;
+    }
+
+    .details {
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      padding: 1.5rem 0;
+      margin-bottom: 2.5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      text-align: left;
+    }
+
+    .details .label {
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.35rem;
+    }
+    .details .value { font-size: 0.95rem; line-height: 1.4; }
+
+    .qr-wrap { margin-bottom: 1.25rem; }
+    .qr-wrap svg { width: 220px; height: 220px; }
+
+    .join {
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+    .link {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .footer {
+      margin-top: 2.5rem;
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    @media print {
+      body { padding: 0; }
+      .flyer { border: 2px solid var(--ink); }
+    }
+  </style>
+</head>
+<body>
+  <div class="flyer">
+    <div class="brand"><strong>BARC</strong> // Bay Area Robot Club</div>
+
+    <h1>Calling all builders.</h1>
+    <p class="sub">
+      A club for people who build robots. In-person meetups in Palo Alto,
+      hardware demos, online discussion, and research collaboration.
+    </p>
+
+    <div class="details">
+      <div>
+        <div class="label">When</div>
+        <div class="value">Last Sunday of every month<br>Next: Sun August 30th 2026, 1&ndash;2.30pm</div>
+      </div>
+      <div>
+        <div class="label">Where</div>
+        <div class="value">Palo Alto, CA</div>
+      </div>
+      <div>
+        <div class="label">Who</div>
+        <div class="value">Robot builders, researchers, developers</div>
+      </div>
+      <div>
+        <div class="label">Focus</div>
+        <div class="value">Robots &middot; Actuators &middot; Hardware &middot; Software</div>
+      </div>
+    </div>
+
+    <div class="qr-wrap">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33"><path stroke="#111" d="M2 2.5h7m2 0h2m1 0h1m1 0h3m1 0h2m2 0h7m-29 1h1m5 0h1m4 0h2m3 0h5m1 0h1m5 0h1m-29 1h1m1 0h3m1 0h1m1 0h6m1 0h1m1 0h4m1 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m4 0h1m1 0h1m1 0h2m1 0h3m1 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h4m2 0h1m3 0h1m3 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m1 0h1m2 0h3m5 0h1m2 0h1m5 0h1m-29 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-19 1h5m2 0h2m-18 1h1m2 0h1m1 0h1m1 0h5m1 0h1m1 0h2m2 0h2m1 0h2m1 0h1m-26 1h2m4 0h1m2 0h1m1 0h1m1 0h2m2 0h2m1 0h1m1 0h2m1 0h3m-29 1h1m3 0h5m1 0h1m1 0h1m1 0h1m5 0h2m1 0h1m1 0h2m1 0h1m-29 1h1m1 0h3m2 0h1m3 0h1m1 0h2m2 0h2m1 0h2m5 0h2m-24 1h4m4 0h1m1 0h1m1 0h1m1 0h2m2 0h1m1 0h1m2 0h1m-29 1h1m1 0h3m4 0h3m1 0h6m3 0h1m1 0h1m1 0h1m1 0h1m-27 1h2m1 0h5m1 0h3m1 0h2m4 0h2m1 0h1m3 0h1m-29 1h2m2 0h1m3 0h1m3 0h1m3 0h3m1 0h1m2 0h1m1 0h1m-26 1h4m2 0h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h2m1 0h1m5 0h1m-28 1h1m1 0h4m4 0h2m5 0h3m2 0h3m3 0h1m-23 1h2m2 0h1m3 0h2m2 0h1m1 0h1m2 0h4m1 0h1m-27 1h2m4 0h2m3 0h6m1 0h1m4 0h1m2 0h1m-29 1h2m3 0h3m1 0h1m2 0h3m2 0h1m2 0h5m2 0h2m-21 1h1m4 0h3m3 0h2m3 0h1m1 0h1m1 0h1m-29 1h7m4 0h3m1 0h3m1 0h2m1 0h1m1 0h1m3 0h1m-29 1h1m5 0h1m2 0h1m5 0h1m1 0h1m1 0h2m3 0h2m1 0h1m-28 1h1m1 0h3m1 0h1m1 0h4m1 0h2m3 0h7m2 0h2m-29 1h1m1 0h3m1 0h1m6 0h2m1 0h1m1 0h1m4 0h1m1 0h3m-28 1h1m1 0h3m1 0h1m3 0h1m5 0h1m2 0h3m3 0h4m-29 1h1m5 0h1m1 0h2m1 0h1m1 0h1m3 0h1m2 0h4m1 0h1m1 0h2m-29 1h7m2 0h3m2 0h2m1 0h1m2 0h3m1 0h1m2 0h1"/></svg>
+    </div>
+
+    <div class="join">Scan to join the Discord</div>
+    <div class="link">discord.gg/svdScmUNEk</div>
+
+    <div class="footer">tjacobs.github.io/barc &middot; Palo Alto, CA &middot; Est. 2026</div>
+  </div>
+</body>
+</html>
