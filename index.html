@@ -170,6 +170,31 @@
 
     .watch-link a:hover { text-decoration: underline; }
 
+    .gallery {
+      margin-top: 2.5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      max-width: 480px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border: 1px solid var(--border);
+      display: block;
+    }
+
+    .gallery-cap {
+      grid-column: 1 / -1;
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: -0.25rem;
+    }
+
     footer {
       border-top: 1px solid var(--border);
       padding: 1.5rem 3rem;
@@ -237,6 +262,12 @@
     <p class="watch-link">
       Watch: <a href="https://www.youtube.com/watch?v=GbdGIG_IPA8">Robots built over 2025/2026 →</a>
     </p>
+
+    <div class="gallery">
+      <div class="gallery-cap">From the workshop</div>
+      <img src="img/lineup.jpg" alt="Home-built robots lined up — humanoid, telepresence bot, and a blue quadruped">
+      <img src="img/builders.jpg" alt="BARC builders with their robots">
+    </div>
   </main>
 
   <footer>
