@@ -184,7 +184,11 @@
       object-fit: cover;
       border: 1px solid var(--border);
       display: block;
+      cursor: pointer;
+      transition: opacity 0.15s;
     }
+
+    .gallery img:hover { opacity: 0.8; }
 
     .gallery-cap {
       grid-column: 1 / -1;
@@ -193,6 +197,44 @@
       text-transform: uppercase;
       color: var(--muted);
       margin-bottom: -0.25rem;
+    }
+
+    .gallery-date {
+      grid-column: 1 / -1;
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: -0.25rem;
+    }
+
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      z-index: 100;
+      cursor: zoom-out;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      border: 1px solid var(--border);
+    }
+    .lightbox-close {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.75rem;
+      color: var(--accent);
+      font-size: 2rem;
+      line-height: 1;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: var(--font);
     }
 
     footer {
@@ -268,8 +310,33 @@
       <img src="img/lineup.jpg" alt="Home-built robots lined up — humanoid, telepresence bot, and a blue quadruped">
       <img src="img/builders.jpg" alt="BARC builders with their robots">
       <img src="img/group.jpg" alt="BARC members gathered with their robots">
+      <div class="gallery-date">Photos from the July 26th 2026 meetup</div>
     </div>
   </main>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Close">✕</button>
+    <img src="" alt="">
+  </div>
+
+  <script>
+    (function () {
+      var lb = document.getElementById('lightbox');
+      var lbImg = lb.querySelector('img');
+      document.querySelectorAll('.gallery img').forEach(function (img) {
+        img.addEventListener('click', function () {
+          lbImg.src = img.src;
+          lbImg.alt = img.alt;
+          lb.classList.add('open');
+        });
+      });
+      function close() { lb.classList.remove('open'); lbImg.src = ''; }
+      lb.addEventListener('click', close);
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') close();
+      });
+    })();
+  </script>
 
   <footer>
     <span>BARC — Bay Area Robot Club</span>
