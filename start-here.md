@@ -12,7 +12,7 @@ Robots, actuators, hardware, software. Show what you've built, find collaborator
 
 ## Meetups
 
-Last Sunday of every month in Palo Alto. Next: **Sunday, August 30th, 2026, 1–2.30pm** — Venture Dock, 555 University Ave.
+Last Sunday of every month. Next: **Sunday, September 27th, 2026, 1–2.30pm** — Lightberry, Dogpatch, San Francisco.
 
 ## Access
 
