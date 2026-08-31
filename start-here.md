@@ -12,7 +12,7 @@ Robots, actuators, hardware, software. Show what you've built, find collaborator
 
 ## Meetups
 
-Last Sunday of every month. Next: **Sunday, September 27th, 2026, 1–2.30pm** — Lightberry, Dogpatch, San Francisco.
+Last Sunday of every month. Next: **Sunday, Sept 27th, 2026, 1pm–3pm** — Lightberry, Dogpatch, San Francisco.
 
 ## Access
 
