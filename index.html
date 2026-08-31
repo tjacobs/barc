@@ -179,12 +179,26 @@
 
     .watch-link a:hover { text-decoration: underline; }
 
-    .gallery {
+    .gallery-heading {
       margin-top: 1.75rem;
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .gallery {
+      margin-bottom: 1.5rem;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 1rem;
       max-width: 720px;
+    }
+
+    .gallery .feature {
+      grid-column: 1 / -1;
+      height: 300px;
     }
 
     .gallery img {
@@ -281,7 +295,7 @@
       </div>
       <div class="cell">
         <div class="cell-label">Where</div>
-        <div class="cell-value">Venture Dock,<br>555 University Ave, Palo Alto</div>
+        <div class="cell-value">Lightberry,<br>Dogpatch, San Francisco</div>
       </div>
       <div class="cell">
         <div class="cell-label">Membership</div>
@@ -293,7 +307,7 @@
       </div>
       <div class="cell">
         <div class="cell-label">When</div>
-        <div class="cell-value">Last Sunday each month<br>Sun August 30th 2026<br>1pm - 2:30pm</div>
+        <div class="cell-value">Last Sunday each month<br>Sun September 27th 2026<br>1pm - 2:30pm</div>
       </div>
       <div class="cell">
         <div class="cell-label">Who</div>
@@ -316,12 +330,18 @@
       Watch: <a href="https://www.youtube.com/watch?v=GbdGIG_IPA8">Robots built over 2025/2026 →</a>
     </p>
 
+    <div class="gallery-heading">From the meetups</div>
+
     <div class="gallery">
-      <div class="gallery-cap">From the workshop</div>
+      <div class="gallery-cap">August 30th 2026 · Venture Dock, Palo Alto</div>
+      <img class="feature" src="img/aug30.jpg" alt="BARC members and their robots at the August meetup">
+    </div>
+
+    <div class="gallery">
+      <div class="gallery-cap">July 26th 2026 · Venture Dock, Palo Alto</div>
       <img src="img/lineup.jpg" alt="Home-built robots lined up — humanoid, telepresence bot, and a blue quadruped">
       <img src="img/builders.jpg" alt="BARC builders with their robots">
       <img src="img/group.jpg" alt="BARC members gathered with their robots">
-      <div class="gallery-date">Photos from the July 26th 2026 meetup</div>
     </div>
   </main>
 
