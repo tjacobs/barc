@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//BARC//Bay Area Robot Club//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:barc-sept-2026@tjacobs.github.io
+DTSTAMP:20260901T000000Z
+DTSTART:20260927T200000Z
+DTEND:20260927T220000Z
+SUMMARY:BARC Meetup — Bay Area Robot Club
+LOCATION:Lightberry, Dogpatch, San Francisco
+DESCRIPTION:Bay Area Robot Club meetup. Bring your own robot to show!\n\nDiscord: https://discord.gg/svdScmUNEk\nMore: https://tjacobs.github.io/barc
+URL:https://tjacobs.github.io/barc
+END:VEVENT
+END:VCALENDAR
