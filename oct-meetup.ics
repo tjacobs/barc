@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//BARC//Bay Area Robot Club//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:barc-oct-2026@tjacobs.github.io
+DTSTAMP:20261003T000000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T220000Z
+SUMMARY:BARC Meetup — Bay Area Robot Club
+LOCATION:Venture Dock\, 555 University Ave\, Palo Alto\, CA 94301
+DESCRIPTION:Bay Area Robot Club meetup. Bring your own robot to show!\n\nDiscord: https://discord.gg/svdScmUNEk\nMore: https://tjacobs.github.io/barc
+URL:https://tjacobs.github.io/barc
+END:VEVENT
+END:VCALENDAR
