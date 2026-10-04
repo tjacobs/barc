@@ -114,11 +114,13 @@
     }
     .photos img {
       width: 100%;
-      height: auto;
+      height: 105px;
+      object-fit: contain;
+      background: #fff;
       border: 1px solid var(--line);
       display: block;
     }
-    .photos img.span2 { grid-column: 1 / -1; }
+    .photos img.span2 { grid-column: 1 / -1; height: 120px; }
 
     @media print {
       body { padding: 0; }
