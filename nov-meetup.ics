@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//BARC//Bay Area Robot Club//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:barc-nov-2026@tjacobs.github.io
+DTSTAMP:20261022T000000Z
+DTSTART:20261129T210000Z
+DTEND:20261129T230000Z
+SUMMARY:BARC Meetup — Bay Area Robot Club
+LOCATION:Lightberry\, American Industrial Center\, 2325 3rd St\, Suite 347\, San Francisco\, CA 94107
+DESCRIPTION:Bay Area Robot Club meetup. Bring your own robot to show!\n\nCall 415 629 2692 for the door code.\n\nDiscord: https://discord.gg/2Yv8EYwffq\nMore: https://tjacobs.github.io/barc
+URL:https://tjacobs.github.io/barc
+END:VEVENT
+END:VCALENDAR

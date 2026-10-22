@@ -12,7 +12,7 @@ Robots, actuators, hardware, software. Show what you've built, find collaborator
 
 ## Meetups
 
-Last Sunday of every month. Next: **Sunday, Oct 25th, 2026, 1pm–3pm** — Venture Dock, 555 University Ave, Palo Alto, CA 94301.
+Last Sunday of every month. Next: **Sunday, Nov 29th, 2026, 1pm–3pm** — Lightberry, American Industrial Center, 2325 3rd St, Suite 347, San Francisco, CA 94107. Call 415 629 2692 for the door code.
 
 ## Access
 
